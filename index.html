@@ -8,6 +8,16 @@
 </head>
 <body>
     <h1>Cryptocurrencies API</h1>
-    <p>Please use http://localhost:8000/api to access data.</p>
+    <p>Please use https://cryptocurrencies-api.herokuapp.com/api to access data.</p>
+    <p>To access a single resourse, make GET request to https://cryptocurrencies-api.herokuapp.com/api/<strong>:coin-name</strong>, where ':coin-name' is the name of cryptocurency.</p>
+    <p>For example, GET https://cryptocurrencies-api.herokuapp.com/api/<strong>bitcoin</strong> will return JSON object with the following properties:</p>
+    <p>{
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "type": "PoW",
+        "max supply": "21,000,000",
+        "whitepaper": "https://bitcoin.org/bitcoin.pdf"
+    }</p>
+    <p>List of available currencies: Bitcoin, Ethereum, Tether, Cardano, Solana. If the request is unknown, the object with unknown properties will be returned.</p>
 </body>
 </html>
